@@ -1,123 +1,153 @@
 # Agenda (A04)
-## Sep 02
 
+> These are my notes on what I plan to teach in each [**upcoming class**](#sep-02).
+>
+> ###### *... Warn those who are idle ..., encourage the disheartened, help the weak, be patient with everyone.*
+>
+> > My philosophy of teaching, taken from [the source](https://www.bible.com/bible/111/1TH.5.14.NIV)
 
-## Sep 05
 
+> ## Starter Kits
+>
+> To grab a starting point for any in-class demos or practices, you can use [**tiged**](https://github.com/tiged/tiged) (based on [`degit`](https://github.com/Rich-Harris/degit) by Rich Harris, creator of Svelte). It will allow you to grab a copy of the starter kit folder to put into your student workbook.
+> 
+> You will need to have `pnpm` installed and working on your computer. Run the following code in the terminal from the **root** of your repository:
+>
+> ```bash
+> pnpm dlx tiged --disable-cache --force dgilleland/CPSC-1520-Workbook/sk/-how-to- ./src/-how-to-
+> ```
+>
+> ***Note:** You may need to <kbd>ctrl</kbd>+<kbd>c</kbd> to stop the `pnpm tlx tiged` command after it has finished downloading the demo folder.*
 
-## Sep 08
 
+----
 
-## Sep 09
+## Sep-Dec 2025 Schedule
 
+### Sep 02
 
-## Sep 12
+- Course Introduction
+- GitHub Account Setup
+- Software Setup
+- Workbook Setup
+  - [000](./src/000/ReadMe.md)
 
+### Sep 05
 
-## Sep 15
 
+### Sep 08
 
-## Sep 16
 
+### Sep 09
 
-## Sep 19
 
+### Sep 12
 
-## Sep 22
 
+### Sep 15
 
-## Sep 23
 
+### Sep 16
 
-## Sep 26
 
+### Sep 19
 
-## Sep 29
 
+### Sep 22
 
-## Oct 03
 
+### Sep 23
 
-## Oct 06
 
+### Sep 26
 
-## Oct 07
 
+### Sep 29
 
-## Oct 10
 
+### Oct 03
 
-## Oct 14
 
+### Oct 06
 
-## Oct 17
 
+### Oct 07
 
-## Oct 20
 
+### Oct 10
 
-## Oct 21
 
+### Oct 14
 
-## Oct 24
 
+### Oct 17
 
-## Oct 27
 
+### Oct 20
 
-## Oct 28
 
+### Oct 21
 
-## Oct 31
 
+### Oct 24
 
-## Nov 03
 
+### Oct 27
 
-## Nov 04
 
+### Oct 28
 
-## Nov 14
 
+### Oct 31
 
-## Nov 17
 
+### Nov 03
 
-## Nov 18
 
+### Nov 04
 
-## Nov 21
 
+### Nov 14
 
-## Nov 24
 
+### Nov 17
 
-## Nov 25
 
+### Nov 18
 
-## Nov 28
 
+### Nov 21
 
-## Dec 01
 
+### Nov 24
 
-## Dec 02
 
+### Nov 25
 
-## Dec 05
 
+### Nov 28
 
-## Dec 08
 
+### Dec 01
 
-## Dec 09
 
+### Dec 02
 
-## Dec 12
 
+### Dec 05
 
-## Dec 15
 
+### Dec 08
 
-## Dec 16
+
+### Dec 09
+
+
+### Dec 12
+
+
+### Dec 15
+
+
+### Dec 16
 
