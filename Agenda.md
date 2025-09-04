@@ -40,7 +40,7 @@
     - 🚨 Contact me via MS Teams if you have any trouble accessing/using your workbook!
   - [000](./src/000/ReadMe.md)
 - **Homework:**
-  - Complete the [Practice Version Control]() tutorial; be sure to publish it as a **public** repository on your **personal** GitHub account.
+  - Complete the [Practice Version Control](https://dgilleland.github.io/CPSC-1520/tutorials/0011/) tutorial; be sure to publish it as a **public** repository on your **personal** GitHub account.
   - Send me the the link to the repository via MS Teams.
 
 
