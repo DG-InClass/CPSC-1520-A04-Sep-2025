@@ -21,11 +21,18 @@
 - [ ] Create and synchronize commits as a means of submitting your work
   - *This is a skill to practice*
 - [ ] Describe the purpose and basic principles of Markdown syntax
-- [ ] Create notes written in Markdown format
+  - Markdown is a way to focus on the **content** rather than the *presentation* of information.
+- [x] Create notes written in Markdown format
+  - Practice, practice, practice.
 - [ ] List four common commands used in the terminal
+  - `cd`, `mkdir`, `cls`, and others (again, on *dan's site*)
 - [ ] Identify the keyboard shortcuts for opening the terminal inside and outside of VS Code
+  - `ctrl` + `\`` (backtick) to toggle the terminal window inside of VS Code
+  - `ctrl` + `shift` + `c` to open an external terminal window
 - [ ] Identify the keyboard shortcut to open the command palette in VS Code
+  - `F1` key or `ctrl` + `shift` + `p`
 - [ ] Perform basic tasks in the terminal related to navigation and version control
+  - Practice, practice, practice.
 
 
 
