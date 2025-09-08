@@ -19,7 +19,7 @@
 - [ ] Explain the purpose of the `.gitignore` file
   - Identifies the folders/files to **not** track in version control
 - [ ] Create and synchronize commits as a means of submitting your work
-  - 
+  - *This is a skill to practice*
 - [ ] Describe the purpose and basic principles of Markdown syntax
 - [ ] Create notes written in Markdown format
 - [ ] List four common commands used in the terminal
