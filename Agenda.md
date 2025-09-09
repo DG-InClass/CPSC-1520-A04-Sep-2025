@@ -75,6 +75,13 @@ Note to selff: See https://github.com/CPSC-1520/DanG-A01-CPSC-1520-Instructor-Wo
 
 ### Sep 09
 
+- **Today**
+  - [ ] [Explore JavaScript in HTML](./src/004/ReadMe.md) (grab the starter kit first)
+
+    ```ps
+    pnpm dlx tiged --disable-cache --force DG-InClass/CPSC-1520-A04-Sep-2025/sk/004 ./src/004
+    ```
+
 <!--
 
 - **Homework**
