@@ -4,6 +4,27 @@
 
 Your first learning adventure should begin with [**Mastering Markdown**](https://guides.github.com/features/mastering-markdown/). Learning how to use Markdown now will really help you focus on capturing **content** in this journal. :sunglasses:
 
+## Web Project Setup
+
+We do one-time set-up of our web project. That involves running these commands in the terminal:
+
+```ps
+pnpm init
+pnpm add -D vite
+```
+
+Then, we edit the `package.json` file to change or add a script to run the developer server:
+
+```json
+  "scripts": {
+    "dev": "vite"
+  }
+```
+
+### Provided `package.json`
+
+You can run `pnpm install` in the terminal to load up the 3rd-party libraries mentioned in the `package.json`.
+
 ## Table of Contents
 
 > *Create an un-ordered list here for your own table of contents, and add links to additional Markdown pages in this folder.*
