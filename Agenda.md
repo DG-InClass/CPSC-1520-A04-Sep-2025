@@ -307,6 +307,9 @@ Note to selff: See https://github.com/CPSC-1520/DanG-A01-CPSC-1520-Instructor-Wo
 ### Sep 16
 
 - **Today**
+  - [ ] **Demo Lab** - *See Brightspace announcement*
+  - [ ] Complete [007](./src/007/ReadMe.md)
+  - [ ] Revisit [005/live-demo](./src/005/live-demo/)
   - [ ] [Event Listeners](./src/008/ReadMe.md) (grab the starter kit first)
 
     ```ps
