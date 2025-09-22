@@ -354,6 +354,10 @@ Note to selff: See https://github.com/CPSC-1520/DanG-A01-CPSC-1520-Instructor-Wo
 ### Sep 23
 
 - **Today**
+  - [ ] A little more about functions
+    - The `return` keyword
+    - Inline function expressions vs. constants for functions
+      - Both can be "anonymous"
   - [ ] [Event Listeners](./src/008/ReadMe.md) (grab the starter kit first)
 
     ```ps
