@@ -329,6 +329,12 @@ Note to selff: See https://github.com/CPSC-1520/DanG-A01-CPSC-1520-Instructor-Wo
  -->
 
 - **Today**
+  - [ ] ***Lab 1 Solution Review***
+  - [ ] Refresher on DOM modifications, specifically
+    - [Selector strings](https://gist.github.com/magicznyleszek/809a69dd05e1d5f12d01) with `document.querySelector()`
+    - Recommended usage of `.innerText` instead of `.textContent`
+      - We will use **innerText**
+      - *but for a deeper comparison, see [this article](https://medium.com/@ashishkumarjena1437/understanding-innertext-textcontent-and-innerhtml-in-javascript-87f3bc2b8e17)*
   - [ ] [Creating Functions](./src/007/ReadMe.md) (grab the starter kit first)
 
     ```ps
@@ -336,29 +342,40 @@ Note to selff: See https://github.com/CPSC-1520/DanG-A01-CPSC-1520-Instructor-Wo
     ```
 
     ✨ Remember to clone/push the starter kit you just grabbed:
+- **Homework:**
+  - [ ] Complete the following QuickStart tutorials:
+    - [ ] [DOM Interactions](https://dgilleland.github.io/CPSC-1520/tutorials/0080/)
+
+
+### Sep 23
+
+- **Today**
   - [ ] [Event Listeners](./src/008/ReadMe.md) (grab the starter kit first)
 
     ```ps
-    pnpm dlx tiged --disable-cache --force DG-InClass/CPSC-1520-A03-Sep-2025/sk/008 ./src/008
+    pnpm dlx tiged --disable-cache --force DG-InClass/CPSC-1520-A04-Sep-2025/sk/008 ./src/008
     ```
 
     ✨ Remember to clone/push the starter kit you just grabbed:
 - **Homework:**
   - [ ] Complete the following QuickStart tutorials:
     - [ ] [Intro to Event Listeners](https://dgilleland.github.io/CPSC-1520/tutorials/0070/)
-    - [ ] [DOM Interactions](https://dgilleland.github.io/CPSC-1520/tutorials/0080/)
-
-
-### Sep 23
-
 
 ### Sep 26
+
+- **In-Class Lab 2**
 
 
 ### Sep 29
 
 
+### Sep 30
+
+- ***No Class***
+
 ### Oct 03
+
+- **In-Class Lab 3**
 
 
 ### Oct 06
