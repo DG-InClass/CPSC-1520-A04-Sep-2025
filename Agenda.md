@@ -23,6 +23,10 @@ Here are quick links to the quiz readings on Brightspace.
 
 > ## Starter Kits
 >
+> I provide a number of starter kits through the term, which you can grab using the process described below.
+>
+> 📖 These starter kits often have lots of `ReadMe.md` files. That means I want you to **read** that information. 👀
+>
 > To grab a starting point for any in-class demos or practices, you can use [**tiged**](https://github.com/tiged/tiged) (based on [`degit`](https://github.com/Rich-Harris/degit) by Rich Harris, creator of Svelte). It will allow you to grab a copy of the starter kit folder to put into your student workbook.
 > 
 > You will need to have `pnpm` installed and working on your computer. Run the following code in the terminal from the **root** of your repository:
@@ -378,7 +382,7 @@ Here are quick links to the quiz readings on Brightspace.
     pnpm dlx tiged --disable-cache --force DG-InClass/CPSC-1520-A04-Sep-2025/sk/008 ./src/008
     ```
 
-    ✨ Remember to commit/push the starter kit you just grabbed:
+    ✨ Remember to commit/push the starter kit you just grabbed
     - 🚀 Using `import` and `export` with JavaScript Modules
       - *Hint: `<script type="module" src="js/main.js"></script>"
     - Inline function expressions vs. constants for functions
