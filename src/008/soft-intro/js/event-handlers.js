@@ -2,6 +2,9 @@ const handleClick = function(event) {
     // Any function that is intended as an "event handler"
     // or "event listener" will be given an Event object
     // when it is called by the browser.
+    event.preventDefault(); // .preventDefault() is a function/method that will stop the browser
+                            // from doing the default action associated with that event for that
+                            // target element.
     // TODO: Use for exploration purposes
     const target = event.target;
     //                  \_____/ <- this is what DOM element the event
