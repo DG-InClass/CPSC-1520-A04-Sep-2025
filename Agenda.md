@@ -310,6 +310,7 @@ Note to selff: See https://github.com/CPSC-1520/DanG-A01-CPSC-1520-Instructor-Wo
 
 - **In-Class Lab 1**
 - **Demo Lab**
+  - Check the Pull Request Update ***or***
   - Run the following in the terminal for the demo lab:
 
     ```ps
