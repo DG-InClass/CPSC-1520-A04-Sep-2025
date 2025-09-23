@@ -10,18 +10,9 @@
 */
 console.log('JavaScript file loaded!');
 
-const handleClick = function(event) {
-    // Any function that is intended as an "event handler"
-    // or "event listener" will be given an Event object
-    // when it is called by the browser.
-    // TODO: Use for exploration purposes
-    const target = event.target;
-    //                  \_____/ <- this is what DOM element the event
-    //                             is associated with
-    console.log(target.tagName); // Every HTML Element has a property called
-                                 // .tagName
-    document.getElementById('feedback').innerText = `Clicked from ${target.tagName}`;
-}
+// I moved the handleClick() event to a different JavaScript file,
+// so I need to access here by importing it
+import { handleClick } from './event-handlers';
 
 let heading = document.querySelector('h1');
 heading.addEventListener('click', handleClick);
