@@ -4,7 +4,7 @@
 Note to self: See https://github.com/CPSC-1520/DanG-A01-CPSC-1520-Instructor-Workbook-2025-Jan/
 -->
 
-> These are my notes on what I plan to teach in each [**upcoming class**](#sep-19). Also check out the [**Brightspace Quizzes**](#quiz-links).
+> These are my notes on what I plan to teach in each [**upcoming class**](#sep-23). Also check out the [**Brightspace Quizzes**](#quiz-links).
 >
 > ###### *... Warn those who are idle ..., encourage the disheartened, help the weak, be patient with everyone.*
 >
@@ -379,6 +379,8 @@ Here are quick links to the quiz readings on Brightspace.
     ```
 
     ✨ Remember to commit/push the starter kit you just grabbed:
+    - 🚀 Using `import` and `export` with JavaScript Modules
+      - *Hint: `<script type="module" src="js/main.js"></script>"
     - Inline function expressions vs. constants for functions
       - Both can be "anonymous"
 - **Homework:**
