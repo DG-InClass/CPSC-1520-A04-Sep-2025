@@ -92,7 +92,7 @@ Here are quick links to the quiz readings on Brightspace.
     pnpm dlx tiged --disable-cache --force DG-InClass/CPSC-1520-A04-Sep-2025/sk/004 ./src/004
     ```
 
-    Remember to clone/push the starter kit you just grabbed:
+    Remember to commit/push the starter kit you just grabbed:
 
     ```ps
     git add .
@@ -267,7 +267,7 @@ Here are quick links to the quiz readings on Brightspace.
     pnpm dlx tiged --disable-cache --force DG-InClass/CPSC-1520-A04-Sep-2025/sk/005 ./src/005
     ```
 
-    Remember to clone/push the starter kit you just grabbed:
+    Remember to commit/push the starter kit you just grabbed:
 
     ```ps
     git add .
@@ -299,7 +299,7 @@ Here are quick links to the quiz readings on Brightspace.
     pnpm dlx tiged --disable-cache --force DG-InClass/CPSC-1520-A04-Sep-2025/sk/006 ./src/006
     ```
 
-    ✨ Remember to clone/push the starter kit you just grabbed:
+    ✨ Remember to commit/push the starter kit you just grabbed:
   - [x] *Moved the lesson on Creating Functions to Sep 22*
 - **Homework:**
   - [ ] Complete the following QuickStart tutorials:
@@ -336,7 +336,7 @@ Here are quick links to the quiz readings on Brightspace.
     pnpm dlx tiged --disable-cache --force DG-InClass/CPSC-1520-A04-Sep-2025/sk/006 ./src/006
     ```
 
-    ✨ Remember to clone/push the starter kit you just grabbed:
+    ✨ Remember to commit/push the starter kit you just grabbed:
  -->
 
 - **Today**
@@ -352,7 +352,7 @@ Here are quick links to the quiz readings on Brightspace.
     pnpm dlx tiged --disable-cache --force DG-InClass/CPSC-1520-A04-Sep-2025/sk/007 ./src/007
     ```
 
-    ✨ Remember to clone/push the starter kit you just grabbed:
+    ✨ Remember to commit/push the starter kit you just grabbed:
 - **Homework:**
   - [ ] Complete the following tutorial(s):
     - [ ] [DOM Interactions](https://dgilleland.github.io/CPSC-1520/tutorials/0080/)
@@ -378,7 +378,7 @@ Here are quick links to the quiz readings on Brightspace.
     pnpm dlx tiged --disable-cache --force DG-InClass/CPSC-1520-A04-Sep-2025/sk/008 ./src/008
     ```
 
-    ✨ Remember to clone/push the starter kit you just grabbed:
+    ✨ Remember to commit/push the starter kit you just grabbed:
     - Inline function expressions vs. constants for functions
       - Both can be "anonymous"
 - **Homework:**
