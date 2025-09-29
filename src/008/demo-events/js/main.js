@@ -3,13 +3,13 @@
 
 */
 
-import { showElementOnClick } from './eventListener';
+import { hideElementOnDoubleClick, showElementOnClick } from './eventListener';
 let desc = document.querySelector('.feature.description');
 let featureImage = document.querySelector('img.feature');
 let headerEl = document.querySelector('header > h1');
 showElementOnClick(featureImage, desc);
 showElementOnClick(headerEl, desc);
-
+hideElementOnDoubleClick(headerEl, desc);
 
 // // 1. Create a function to show the poem
 // const handleFeatureClick = function() {
