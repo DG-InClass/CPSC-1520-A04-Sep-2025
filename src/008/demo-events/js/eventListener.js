@@ -17,5 +17,11 @@ const showElementOnClick = function(clickElement, revealElement) {
     });
 }
 
+const hideElementOnDoubleClick = function(clickElement, hideElement) {
+    clickElement.addEventListener('dblclick', function() {
+        hideElement.classList.add('hidden');
+    });
+}
+
 // Export my function
-export { showElementOnClick }
+export { showElementOnClick, hideElementOnDoubleClick }
