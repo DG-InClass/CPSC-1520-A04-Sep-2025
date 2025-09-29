@@ -13,10 +13,14 @@ document
     .addEventListener('submit', function(ev) { // an anonymous function responding to submit
         ev.preventDefault(); // This will stop the browser from submitting the form to the server
         // console.log(ev);
+        // the <form> element
         let theForm = ev.target;
+        console.log('The form elements are:', theForm.elements);
         clearFeedback('The subscribe form was submitted.');
+        // get the <input name="firstname" /> element
         let firstNameInput = theForm.elements.firstname;
         appendFeedback("The first name is: '" + firstNameInput.value + "'");
+        // get the <input name="email" /> element
         let emailInput = theForm.elements.email;
         appendFeedback(`Their email is: '${emailInput.value}'`);
 
@@ -32,6 +36,17 @@ const exploreForm = function(ev) {
     let target = ev.target;
     let theInputs = target.elements;
     console.log('theInputs: ', theInputs);
+    
+    let feedback = '';
+    // Let's display the date that the user entered.
+    let theDateInput = theInputs.date; // <input name="date" type="date" />
+    feedback = `The date entered was: ${theDateInput.value}`;
+    appendFeedback(feedback);
+
+    // Let's display the color selected
+    let colorSelection = theInputs.color;
+    feedback = `You selected this color: ${colorSelection.value}`;
+    appendFeedback(feedback);
 
     // If your input control has a name with a dash in it,
     // use the name's value as an "index" for the object.
