@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quote Estimator</title>
+    <link rel="icon" type="image/png" href="./favicon.png">
+    <link rel="stylesheet"
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="./js/main.js" defer></script>
+</head>
+
+<body>
+    <main class="container">
+        <h1>Freelance Web Development - Quote Estimator</h1>
+        <form>
+            <fieldset class="grid"></fieldset>
+            <fieldset role="group">
+                <input type="text"><button>Clicker</button>
+            </fieldset>
+
+            <fieldset class="grid">
+                <label for="job-duration">
+                    <input type="number" name="duration" id="job-duration" />
+                </label>
+                <label role="button">Interval:
+                    <fieldset>
+                        <input type="radio" name="interval" id="interval-hours" />
+                        <label for="interval-hours">
+                            hours
+                        </label>
+                        <input type="radio" name="interval" id="interval-weeks" />
+                        <label for="interval-weeks">
+                            weeks
+                        </label>
+                    </fieldset>
+                </label>
+            </fieldset>
+
+            <label for="base-rate">Base Rate:
+            </label>
+                <input type="number" name="base-rate" id="base-rate" />
+            <label>Digital Assets:
+                <input type="number" name="digitalAssetCount" />
+            </label>
+            <label>Digital Asset Rate:
+                <input type="number" name="digitalAssetRate" />
+            </label>
+            <label>Content Authoring:
+                <input type="checkbox" name="includeContent" />
+                Include?
+            </label>
+            <label>Per-Word Rate:
+                <input type="number" name="per-word-rate" />
+            </label>
+            <label>Start Date:
+                <input type="date" name="start-date" />
+            </label>
+            <label>Quote Breakdown:
+                <output name="breakdown"></output>
+            </label>
+        </form>
+    </main>
+
+    <footer class="container" data-theme="dark">
+        <hr />
+        <ul>
+            <li>Using the <a href="https://picocss.com/" target="_blank">PicoCSS</a> No-Class Stylesheet.</li>
+            <li><a target="_blank" href="https://icons8.com/icon/8KjmxtKj6Qe0/dollar-banknote">Dollar Banknote</a> icon
+                by <a target="_blank" href="https://icons8.com">Icons8</a>.</li>
+            <li>Form samples include adaptations from the <a
+                    href="https://github.com/picocss/examples/blob/master/v2-html/index.html" target="_blank"
+                    rel="noopener noreferrer">PicoCSS Samples</a></li>
+        </ul>
+        <p>&copy; 2025 - Instructor Dan</p>
+    </footer>
+</body>
+
+</html>
