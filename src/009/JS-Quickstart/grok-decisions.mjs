@@ -39,6 +39,30 @@ console.log('-----------------');
  * literal values, and/or function calls that return
  * a value.
  */
+/* Relational Operators
+    Allow us to compare two items
+==      "is equal to" - equality operator
+!=      "is not equal to" - equality operator
+===     "is equal to" - identity operator
+!==     "is not equal to" - identity operator
+>       greater than
+<       less than
+>=      greater than or equal to
+<=      less than or equal to
+*/
+// Variables may be re-used in subsequent examples
+let success = true; // Boolean
+let isEmployed = false; // Don't worry, you'll get there...
 
+// Step 1) A simple if statement
+if(success == true) {
+    console.log('Success! The code inside this "block" will run.');
+    console.log('Read on for more discoveries.\n');
+}
+
+if(success) {
+    console.log('The conditional expression in an `if` statement just needs to work out as a boolean VALUE.');
+    console.log('`success` is a boolean, there is no need to compare it to `true`.\n');
+}
 
 console.log('\nTHE END\n');
