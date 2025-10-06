@@ -65,4 +65,14 @@ if(success) {
     console.log('`success` is a boolean, there is no need to compare it to `true`.\n');
 }
 
+// Step 2) The else block
+if(isEmployed) {
+    // true side
+    console.log('Well, it is always good to review the fundamentals.\n');
+} else {
+    // false side
+    console.log('No fear! Perseverance is always needed when job hunting!');
+    console.log('By reviewing the fundamentals, you will improve everything that builds on top of them!\n');
+}
+
 console.log('\nTHE END\n');
