@@ -120,4 +120,21 @@ if(zero > 0) {
     }
 }
 
+console.log('Relational operations can work on strings');
+if('Albert' > 'Barney') {
+    console.log('Albert should go first');
+} else {
+    console.log('Barney is greater than Albert');
+}
+
+if('Albert' > 'albert') {
+    console.log('Upper-case letters are greater than lower case');
+} else {
+    console.log('Lower-case letters are greater than upper case');
+}
+
+if('Albert'.toLowerCase() === 'albert') {
+    console.log('Forcing strings to the same case makes comparisons easier.\n');
+}
+
 console.log('\nTHE END\n');
