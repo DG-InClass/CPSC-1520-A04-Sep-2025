@@ -92,4 +92,32 @@ if(count === five) {
     console.log(five, describeDataType(five));
 }
 
+// Step 4) Relational Operators
+console.clear(); // because our output is getting long
+console.log('Relational Operators');
+let result; // We'll set this value using different operators
+console.log(' -5  -4  -3  -2  -1   0   1   2   3   4   5  ');
+console.log('__|___|___|___|___|___|___|___|___|___|___|__');
+
+let itemPrice = 2.59, total = 12.95;
+if(itemPrice * count > total) {
+    console.log(`${itemPrice} * ${count} is greater than ${total}`);    
+}
+if(itemPrice * count < total) {
+    console.log(`${itemPrice} * ${count} is less than ${total}`);    
+}
+
+// demo of nested if/else statements
+let zero = 0;
+if(zero > 0) {
+    console.log('Really?!');
+} else {
+    if(zero < 0) {
+        console.log('Come on! No way!');
+    } else {
+        console.log('                      0');
+        console.log('Must be equal');
+    }
+}
+
 console.log('\nTHE END\n');
