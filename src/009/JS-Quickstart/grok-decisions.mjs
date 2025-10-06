@@ -137,4 +137,22 @@ if('Albert'.toLowerCase() === 'albert') {
     console.log('Forcing strings to the same case makes comparisons easier.\n');
 }
 
+// HOMEWORK: Explore using more if/else statements
+// Step 5) Logical Operators
+/* Logical Operators
+
+!       "NOT" operator (unary)
+&&      "AND" operator
+||      "OR" operator
+*/
+
+
+// Step 6) Flow-Control: Stacking
+
+// Step 7) Flow-Control: Nesting
+
+// Step 8) Complex Conditionals
+
+// Step 9) Function Calls in Conditionals
+
 console.log('\nTHE END\n');
