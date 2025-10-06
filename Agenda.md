@@ -426,6 +426,7 @@ Here are quick links to the quiz readings on Brightspace.
 ### Oct 06
 
 - **Today:**
+  - 🚡 Lab 4/5 Date Changes
   - **009** - If/Else
 
     ```ps
@@ -445,6 +446,8 @@ Here are quick links to the quiz readings on Brightspace.
 
 ### Oct 10
 
+- **Today:**
+  - 🎉
 
 ### Oct 13
 
