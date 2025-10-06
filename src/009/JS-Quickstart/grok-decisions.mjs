@@ -75,4 +75,21 @@ if(isEmployed) {
     console.log('By reviewing the fundamentals, you will improve everything that builds on top of them!\n');
 }
 
+// Step 3) Truthy or Falsy
+let count = 5, five = '5';
+
+if(count == five) {
+    // The two values match (kinda)
+    message = `Loosely speaking, ${count} equals ${five}.`;
+    console.log(message);
+}
+
+if(count === five) {
+    message = 'Nah, I do not believe you.\n';
+} else {
+    console.log('BUT, they do not STRICTLY match!')
+    console.log(count, describeDataType(count));
+    console.log(five, describeDataType(five));
+}
+
 console.log('\nTHE END\n');
