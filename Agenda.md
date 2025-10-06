@@ -426,12 +426,22 @@ Here are quick links to the quiz readings on Brightspace.
 ### Oct 06
 
 - **Today:**
-  - *009a* - *Freelance Web Development - Quote Estimator*
-  - If/Else
+  - **009** - If/Else
+
+    ```ps
+    pnpm dlx tiged --disable-cache --force DG-InClass/CPSC-1520-A04-Sep-2025/sk/009 ./src/009
+    ```
+
+    ✨ Remember to commit/push the starter kit you just grabbed
+  - *009-a* - Grok Decisions
 - **Homework:**
+  - ***Rinse-n-Repeat*** - Expand on the `grok-decisions.mjs` file any time you need to better understand an if/else.
 
 ### Oct 07
 
+- **Today:**
+  - Continue with 009
+    - *009-b* - *Freelance Web Development - Quote Estimator*
 
 ### Oct 10
 
