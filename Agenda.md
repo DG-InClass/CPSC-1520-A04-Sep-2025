@@ -443,6 +443,7 @@ Here are quick links to the quiz readings on Brightspace.
 - **Today:**
   - Continue with 009
     - *009-b* - *Freelance Web Development - Quote Estimator*
+      - Run `pnpm install` and `pnpm dev` in the terminal
   - ❓QnA‼️ - **Assignment 1**
 
 ### Oct 10
