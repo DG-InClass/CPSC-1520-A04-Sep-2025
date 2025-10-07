@@ -15,9 +15,9 @@ document.querySelector('form')
         let isValidInput = true; // Optimistic approach
         let errorSummary = ""; // No problems to report (yet)
         /* Validation Expectations:
-         *  - job duration must be greater than zero
-         *  - interval selection must be made (hours vs. weeks)
-         *  - base rate must be $1000 or greater
+         *  - ✅ job duration must be greater than zero
+         *  - ✅ interval selection must be made (hours vs. weeks)
+         *  - ✅ base rate must be $1000 or greater
          *  - digital assets must be greater than or equal to zero
          *  - if there are digital assets, then the per-asset price must be greater than $10
          *  - if content authoring is to be included, then the per-word-rate must be between 25¢ and $1.25 inclusive
@@ -48,6 +48,20 @@ document.querySelector('form')
                 errorSummary += "Job duration must be greater than zero.\n";
             }
         }
+        //      - interval selection must be made (hours vs. weeks)
+        let missingHoursInput = !inputRadioHours.checked;
+        let missingWeeksInput = !inputRadioWeeks.checked;
+        if(missingHoursInput && missingWeeksInput) {
+            isValidInput = false;
+            errorSummary += "You must choose either Hours or Weeks for the duration.\n";
+        }
+        //      - base rate must be $1000 or greater
+        let baseRate = parseFloat(inputBaseRate.value);
+        if(isNaN(baseRate) || baseRate < 1000) {
+            isValidInput = false;
+            errorSummary += "A base rate is required and must be $1000 or higher.\n";
+        }
+
 
 
         // The following are just samples of processing the input
