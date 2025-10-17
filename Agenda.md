@@ -509,6 +509,22 @@ Here are quick links to the quiz readings on Brightspace.
 
 - **In-Class Lab 4**
   - Read the [Logical Errors](https://dgilleland.github.io/CPSC-1520/guides/0150/) article on "Faulty" Conditionals
+    - ♻️ [Apply Lab Updates](https://dgilleland.github.io/CPSC-1520/about/lab-updates/)
+    - 🎉 Check that the `.gitignore` has a line identifying **`node_modules`**
+    - To set up a Node project for this, run
+
+      ```ps
+      pnpm init
+      pnpm add -D vite
+      ```
+
+      Then edit the `package.json` to have this script:
+
+      ```json
+      "scripts": {
+        "dev": "vite"
+      }
+      ```
 
 ### Oct 20
 
