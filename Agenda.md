@@ -528,6 +528,18 @@ Here are quick links to the quiz readings on Brightspace.
 
 ### Oct 20
 
+- **Today**
+  - Introduction to Looping + Arrays
+    - See this [slideshow](https://programming-0101.github.io/slides/OOP-Ramp-Up/05-Arrays.html) as a reference. Even though it's for C#, most of the principles still apply in JavaScript.
+  - Quick Topics:
+    - Looping Syntax `for`
+    - Arrays
+    - Arrow Function Syntax
+    - Optional Chaining Operator `?.`
+    - Object Literals + Destructuring Objects
+<!--
+-->    
+- **Homework** 
 
 ### Oct 21
 
