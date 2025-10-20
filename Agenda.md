@@ -537,8 +537,12 @@ Here are quick links to the quiz readings on Brightspace.
     - Arrow Function Syntax
     - Optional Chaining Operator `?.`
     - Object Literals + Destructuring Objects
-<!--
--->    
+  - You can grab the following starter kit on Arrays:
+
+    ```ps
+    pnpm dlx tiged --disable-cache --force DG-InClass/CPSC-1520-A04-Sep-2025/sk/011 ./src/011
+    ```
+
 - **Homework** 
 
 ### Oct 21
