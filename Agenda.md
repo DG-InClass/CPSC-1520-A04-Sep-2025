@@ -544,6 +544,11 @@ Here are quick links to the quiz readings on Brightspace.
     ```
 
 - **Homework** 
+  - Study the code for the following files in the starter kit:
+    - [`arg-parser.js`](./src/011/JS-Quickstart/arg-parser.js)
+    - [`arrays.js`](./src/011/JS-Quickstart/arrays.js)
+    - 🎉 [`a-backlog.js`](./src/011/JS-Quickstart/a-backlog.js)
+    - 🚀 [`built-in-functions.js`](./src/011/JS-Quickstart/built-in-functions.js)
 
 ### Oct 21
 
