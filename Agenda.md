@@ -4,7 +4,7 @@
 Note to self: See https://github.com/CPSC-1520/DanG-A01-CPSC-1520-Instructor-Workbook-2025-Jan/
 -->
 
-> These are my notes on what I plan to teach in each [**upcoming class**](#oct-17). Also check out the [**Brightspace Quizzes**](#quiz-links) and the [**Draft Planning Calendar**](./Calendar.md).
+> These are my notes on what I plan to teach in each [**upcoming class**](#oct-21). Also check out the [**Brightspace Quizzes**](#quiz-links) and the [**Draft Planning Calendar**](./Calendar.md).
 >
 > ###### *... Warn those who are idle ..., encourage the disheartened, help the weak, be patient with everyone.*
 >
@@ -552,6 +552,16 @@ Here are quick links to the quiz readings on Brightspace.
 
 ### Oct 21
 
+- **Today**
+  - Arrays (Playing Computer)
+  - 🎉 [`a-backlog.js`](./src/011/JS-Quickstart/a-backlog.js)
+  - 🚀 [`built-in-functions.js`](./src/011/JS-Quickstart/built-in-functions.js)
+  - Quick Topics:
+    - Looping Syntax `for`
+    - Arrays
+    - Arrow Function Syntax
+    - Optional Chaining Operator `?.`
+    - Object Literals + Destructuring Objects
 
 ### Oct 24
 
