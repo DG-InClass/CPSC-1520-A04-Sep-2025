@@ -565,7 +565,37 @@ Here are quick links to the quiz readings on Brightspace.
 
 ### Oct 24
 
-- **In-Class Lab 5**
+- **Today**
+  - Note the [**Array Function docs**](./src/011/ReadMe.md#built-in-functionsjs)
+  - **011**
+    - Create the `JS-Quickstart/cards.js` to practice loops within loops
+  - **010** - Looping - Node Lists (Checkboxes)
+
+    ```ps
+    pnpm dlx tiged --disable-cache --force DG-InClass/CPSC-1520-A03-Sep-2025/sk/010/Checkboxes ./src/010/Checkboxes
+    ```
+
+    ✨ Remember to commit/push the starter kit before you make edits
+
+  - **011** - Arrays - Web Page Demos
+    - Playing Cards
+
+      ```ps
+      pnpm dlx tiged --disable-cache --force DG-InClass/CPSC-1520-A03-Sep-2025/sk/011/PlayingCards ./src/011/PlayingCards
+      ```
+
+      ✨ Remember to commit/push the starter kit before you make edits
+
+- **Homework:**
+  - Slideshow (Practice)
+
+    ```ps
+    pnpm dlx tiged --disable-cache --force DG-InClass/CPSC-1520-A03-Sep-2025/sk/011/Slideshow ./src/011/Slideshow
+    ```
+
+    ✨ Remember to commit/push the starter kit before you make edits
+  - Guessing Game
+
 
 ### Oct 27
 
@@ -575,6 +605,7 @@ Here are quick links to the quiz readings on Brightspace.
 
 ### Oct 31
 
+- **In-Class Lab 5**
 
 ### Nov 03
 
