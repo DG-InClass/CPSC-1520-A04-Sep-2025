@@ -36,7 +36,44 @@ const toShortCode = function(card) {
 
 console.log(deck.map(toShortCode));
 
+// Let's shuffle the deck!
+// (using the Fisher-Yates Shuffle Algorithm)
 
+/**
+ * Shuffle cards by producing a new array of cards with
+ * the cards in different positions.
+ * 
+ * This is NON-MUTATING. Uses the Fisher-Yates Shuffle
+ * Algorithm.
+ * @param {Card[]} cards An array of cards
+ * @returns {Card[]} A shuffled array of cards
+ */
+const shuffleCards = function(cards) {
+    // Making a copy of the cards
+    let copy = cards.slice();
+    
+    for (let index = copy.length - 1; index > 0; index--) {
+        // Generate a random index
+        const rand = Math.floor(Math.random() * (index + 1));
+        // Swap the current card with the randomly chosen card
+        let temp = copy[rand];
+        copy[rand] = copy[index];
+        copy[index] = temp;
+    }
+
+    return copy;
+}
+
+
+let shuffled = shuffleCards(deck);
+
+console.log('\nShuffled:', shuffled.map(toShortCode));
+
+
+// Draw a card as an example
+let aCard = shuffled.pop(); // dealing from the bottom....
+console.log(`\nI drew ${aCard}`, aCard);
+console.log(`\nI drew ${toShortCode(aCard)} from the shuffled deck, leaving ${shuffled.length} cards remaining.\n`);
 
 // TODO: 2) Deal some cards...
 /** @type {Card[]} */
