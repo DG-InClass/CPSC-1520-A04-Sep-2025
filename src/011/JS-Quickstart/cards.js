@@ -4,16 +4,52 @@
 const cardSuits = [ 'Spades', 'Hearts', 'Diamonds', 'Clubs' ];
 const cardValues = [ 'Ace', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'Jack', 'Queen', 'King' ];
 
-/** @typedef {{ suit: string, value: string }} Card */
-// Ad-Hoc Demo
+/** @typedef { { suit: string, value: string } } Card */
+
+/** @type { Card[] } */
 const deck = [];
 // TODO: 1) Create a deck of cards
+for (let suitIndex = 0; suitIndex < cardSuits.length; suitIndex++) {
+    let suit = cardSuits[suitIndex];
 
-console.log(deck);
+    for (let valueIndex = 0; valueIndex < cardValues.length; valueIndex++) {
+        let value = cardValues[valueIndex];
+        // Create a card
+        let card = { suit, value }; // Object Literal
+        deck.push(card);
+    }
+}
+
+/**
+ * Returns the short 2-character code for a playing card.
+ * @param {Card} card A playing card
+ * @returns {string} A short code
+ */
+const toShortCode = function(card) {
+    let code = card.value[0];
+    if(card.value === '10') code = '0';
+    code += card.suit[0];
+
+    return code;
+}
+
+
+console.log(deck.map(toShortCode));
+
+
 
 // TODO: 2) Deal some cards...
 /** @type {Card[]} */
 const hand = []; // A hand of cards
+
+
+
+
+
+
+
+
+
 
 // PLAY: 3) Search a deck of cards...
 /**
