@@ -2,9 +2,45 @@ const container = document.getElementById('players');
 
 const form = document.querySelector('form');
 // TODO: Add Event Listener
+form.addEventListener('submit', function(evt) {
+    // ALWAYS stop the default for forms in CPSC-1520
+    evt.preventDefault();
+    console.log('Adding players...'); // sanity check
+
+    // Get the names
+    const inputNames = evt.target.elements.playerNames;
+    const names = inputNames.value.split(',').map(name => name.trim());
+    // Can you read the code above?? What does it do? Why is written this way?
+
+    if (names.length > 0) {
+        // Add players to the container
+        names.forEach((player, index) => {
+            container.innerHTML += `<div id="player-${index}"><h2>${player}</h2></div>`;
+        });
+        // console.log(container); // uncomment this if you have problems
+
+        // Disable button, hide form, show container
+        evt.target.elements.createPlayers.setAttribute('disabled', 'true');
+        evt.target.classList.add('hidden');
+        container.classList.remove('hidden');
+    }
+});
 
 const dealButton = document.getElementById('deal-me-in');
 // TODO: Add Event Listener
+dealButton.addEventListener('click', function(evt) {
+    console.clear();
+    const players = container.querySelectorAll('div');
+    players.forEach(playerHand => {
+        const card = shuffledCards.pop();
+        const img = `<img src="/img/${card}.svg" alt="${card}" />`;
+        playerHand.innerHTML += img;
+        // console.log(playerHand); // uncomment if you are having problems
+    })
+})
+
+
+
 
 const shuffledCards = [
     "4D",
