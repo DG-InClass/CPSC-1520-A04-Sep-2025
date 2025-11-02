@@ -612,6 +612,8 @@ Here are quick links to the quiz readings on Brightspace.
 ### Oct 28
 
 - **Today**
+  - 🥸 Demo went off the rails....
+  - 🫥💀🥸😬🪵🧩🎫🎟️🚧🖲️🇺🇲💥
 - **Homework**
   - Read my [blog post](https://dgilleland.github.io/blog/2025-10/advicefornewgrads/) and tell me what you think....
 
@@ -622,6 +624,8 @@ Here are quick links to the quiz readings on Brightspace.
 
 ### Nov 03
 
+- **Today**
+  - 
 
 ### Nov 04
 
