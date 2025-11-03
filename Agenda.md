@@ -632,6 +632,8 @@ Here are quick links to the quiz readings on Brightspace.
   - 📦 Gotta talk more objects
     - [Some more about Objects and JSON](./src/012/JS-Quickstart/about-objects.js)
     - [Create `about-passing-objects.js`](./src/012/JS-Quickstart/about-passing-objects.js)
+  - 🤔 What about sorting arrays
+    - [Create `another-array-note.js`](./src/012/JS-Quickstart/another-array-note.js)
   - 🦴 More `fetch()` - Cascading Inputs with Country Data
 
     ```ps
