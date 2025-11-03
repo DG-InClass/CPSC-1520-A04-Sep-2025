@@ -12,11 +12,5 @@
   "packageManager": "pnpm@10.17.1",
   "devDependencies": {
     "vite": "7.1.11"
-  },
-  "dependencies": {
-    "@picocss/pico": "^2.1.1",
-    "@tailwindcss/vite": "^4.1.16",
-    "tailwindcss": "^4.1.16",
-    "world-countries": "^5.1.0"
   }
 }
