@@ -1,6 +1,6 @@
 // Exposes the functions that allow fetching of country information
 // API Endpoints
-const cachedCountries = './cached/countries.json';
+const cachedCountries = './cached/countries.json'; // locally served by this same website
 const allStatesEndpoint = 'https://countriesnow.space/api/v0.1/countries/states';
 const allCountriesEndpoint = 'https://countriesnow.space/api/v0.1/countries';
 
@@ -9,6 +9,12 @@ const allCountriesEndpoint = 'https://countriesnow.space/api/v0.1/countries';
 
 // A) TODO: Get the cached data
 //  - Async/Await - A "blocking" approach (leaves you waiting...)
+export async function fetchCountryNamesAsync() {
+    const response = await fetch(cachedCountries); // pause until I get a response
+    const parsedJson = await response.json(); // pause while I parse the JSON
+    return parsedJson;
+}
+
 
 // B) TODO: Get the remote data
 //  - Promise/Then - An "eventually..." approach (.then())
