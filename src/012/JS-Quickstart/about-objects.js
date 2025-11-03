@@ -59,7 +59,8 @@ console.log(friends);
 person = new Person('Wilma', 'Slaghoople', null);
 console.log(person);
 friends.push(person);
-// console.table(friends);
+// console.table() is also available in the Browser
+console.table(friends.map(one => ({first: one.givenName, last: one.surname})));
 
 // =========== JSON ================
 // JavaScript Object Notation
@@ -67,11 +68,21 @@ friends.push(person);
 // JSON.stringify() to convert an object into a JSON string
 let data = JSON.stringify(friends[0], null, 2);
 
-console.log(data);
+console.log("This is the JSON string:", data);
+console.log("--------------------");
 // To convert a JSON string back to an object, you use JSON.parse()
 let objectData = JSON.parse(data);
-console.log(objectData);
+console.log(objectData, '\n', friends[0]);
 
 let fred = friends[0];
 let barney = friends[1];
 console.log('Fred was born on: ', fred.dob.valueOf());
+
+console.log("==============");
+// We can use Destructuring syntax in JavaScript to
+// "de-construct" an object's members to get whatever
+// parts we are interested in.
+let { givenName, surname } = fred;
+//    \_______/  \_____/       |
+//   these are properies on  this object
+console.log(givenName, surname);
