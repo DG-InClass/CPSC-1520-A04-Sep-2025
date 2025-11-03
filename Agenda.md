@@ -608,6 +608,9 @@ Here are quick links to the quiz readings on Brightspace.
     ```
 
     ✨ Remember to commit/push the starter kit you just grabbed
+    - [Intro to `fetch()` + Promises](./src/012/JS-Quickstart/about-fetch-api.js)
+    - [Code together demo: DeckOfCardsAPI](./src/012/JS-Quickstart/about-fetch-demo.js)
+    - [`fetch()` with `.map()`](./src/012/JS-Quickstart/about-fetch-then-map.js)
 
 ### Oct 28
 
@@ -621,14 +624,25 @@ Here are quick links to the quiz readings on Brightspace.
 ### Oct 31
 
 - **In-Class Lab 5**
+- **Assignment 2 Released**
 
 ### Nov 03
 
 - **Today**
-  - 
+  - 📦 Gotta talk more objects
+    - [Some more about Objects and JSON](./src/012/JS-Quickstart/about-objects.js)
+    - [Create `about-passing-objects.js`](./src/012/JS-Quickstart/about-passing-objects.js)
+  - 🦴 More `fetch()` - Cascading Inputs with Country Data
+
+    ```ps
+    pnpm dlx tiged --disable-cache --force DG-InClass/CPSC-1520-A04-Sep-2025/sk/012/cascading-inputs ./src/012/cascading-inputs
+    ```
+
 
 ### Nov 04
 
+- **Today**
+  - Finish the [cascading-inputs](./src/012/cascading-inputs/ReadMe.md) demo
 
 ### Nov 14
 
