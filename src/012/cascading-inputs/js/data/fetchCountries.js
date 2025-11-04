@@ -12,9 +12,15 @@ const allCountriesEndpoint = 'https://countriesnow.space/api/v0.1/countries';
 export async function fetchCountryNamesAsync() {
     const response = await fetch(cachedCountries); // pause until I get a response
     const parsedJson = await response.json(); // pause while I parse the JSON
-    return parsedJson;
+    return parsedJson.map(mapFromRichData);
 }
 
+const mapFromRichData = (countryInfo) => {
+    return {
+        name: countryInfo.name,
+        alpha3Code: countryInfo.alpha3code
+    }
+}
 
 // B) TODO: Get the remote data
 //  - Promise/Then - An "eventually..." approach (.then())
