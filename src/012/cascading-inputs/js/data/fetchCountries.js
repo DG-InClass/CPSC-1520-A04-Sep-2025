@@ -18,7 +18,7 @@ export async function fetchCountryNamesAsync() {
 const mapFromRichData = (countryInfo) => {
     return {
         name: countryInfo.name,
-        alpha3Code: countryInfo.alpha3code
+        alpha3Code: countryInfo.alpha3Code
     }
 }
 

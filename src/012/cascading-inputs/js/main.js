@@ -2,13 +2,7 @@
 // Pick one only...
 import '@picocss/pico/css/pico.slate.min.css';
 
-// <throwaway>
-import { fetchCountryNamesAsync } from './data/fetchCountries';
-// an example of a "Top-Level Await"
-const data = await fetchCountryNamesAsync();
-console.log(data);
 
-// </throwaway>
 
 // Supplied code: Do not edit below this line...
 import { setupCascadingUserInputs } from './ui/countryInput';
