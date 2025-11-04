@@ -632,8 +632,6 @@ Here are quick links to the quiz readings on Brightspace.
   - 📦 Gotta talk more objects
     - [Some more about Objects and JSON](./src/012/JS-Quickstart/about-objects.js)
     - [Create `about-passing-objects.js`](./src/012/JS-Quickstart/about-passing-objects.js)
-  - 🤔 What about sorting arrays
-    - [Create `another-array-note.js`](./src/012/JS-Quickstart/another-array-note.js)
   - 🦴 More `fetch()` - Cascading Inputs with Country Data
 
     ```ps
@@ -645,6 +643,12 @@ Here are quick links to the quiz readings on Brightspace.
 
 - **Today**
   - Finish the [cascading-inputs](./src/012/cascading-inputs/ReadMe.md) demo
+  - 🤔 What about sorting arrays
+    - [Create `another-array-note.js`](./src/012/JS-Quickstart/another-array-note.js)
+    - A practical example with [Playing Cards](./src/012/PlayingCards/ReadMe.md)
+    - *Assignment 2 QnA*
+- **Homework**
+  - Assignment 2
 
 ### Nov 14
 
