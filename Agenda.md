@@ -674,7 +674,7 @@ Here are quick links to the quiz readings on Brightspace.
       ```
 
 - **Homework**
-
+  - Readings in [Move/Remove Demo](./src/013/MoveRemove/ReadMe.md)
 
 ### Nov 18
 
