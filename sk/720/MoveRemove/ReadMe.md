@@ -38,6 +38,7 @@
     - [`Node.parentNode`](https://developer.mozilla.org/en-US/docs/Web/API/Node/parentNode)
     - [`Node.parentElement`](https://developer.mozilla.org/en-US/docs/Web/API/Node/parentNode)
   - *Methods*
+    - [`Node.contains()`](https://developer.mozilla.org/en-US/docs/Web/API/Node/contains)
     - [`Node.appendChild()`](https://developer.mozilla.org/en-US/docs/Web/API/Node/appendChild)
     - [`Node.insertBefore()`](https://developer.mozilla.org/en-US/docs/Web/API/Node/insertBefore)
     - [`Node.removeChild()`](https://developer.mozilla.org/en-US/docs/Web/API/Node/removeChild)
