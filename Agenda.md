@@ -656,12 +656,16 @@ Here are quick links to the quiz readings on Brightspace.
 
 ### Nov 17
 
-    - User Profile Demo. Begin with this starter kit:
+- **Today**
+  - [User Profile Demo](./src/013/UserProfile/ReadMe.md).
+    - Exploring the DOM API for 
+    - Begin with this starter kit:
 
       ```ps
       pnpm dlx tiged --disable-cache --force DG-InClass/CPSC-1520-A04-Sep-2025/sk/720/UserProfile ./src/013/UserProfile
       ```
 
+- **Homework**
 
 
 ### Nov 18
