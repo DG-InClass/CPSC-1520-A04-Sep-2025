@@ -40,8 +40,10 @@ const createUnsortedListItem = function(text) {
 
     // Assemble the parts
     li.appendChild(textNode);
+    li.appendChild(spaceNode());
     li.appendChild(trashButton);
     trashButton.appendChild(trashIcon);
+    li.appendChild(spaceNode());
     li.appendChild(rightButton);
     rightButton.append(rightIcon);
     
@@ -56,6 +58,40 @@ const createUnsortedListItem = function(text) {
  * @param {HTMLOListElement} document.sortedList Ordered list of Todo items
  */
 const setupButtonClicks = function({unsortedList, sortedList}) {
+    unsortedList.addEventListener('click', (evt) => {
+        /** @type {HTMLButtonElement | null} */
+        const btn = getButton(evt.target);
+        if(btn) {
+            const child = btn.firstElementChild;
+            let action = "";
+            child.classList.forEach(className => {
+                if(className.endsWith(icon.trash)) {
+                    action = icon.trash;
+                } else if(className.endsWith(icon.moveRight)){
+                    action = icon.moveRight
+                }
+            });
+            const liTag = btn.parentElement;
+            switch(action) {
+                case icon.trash:
+                    liTag.remove();
+                    break;
+                case icon.moveRight:
+                    sortedList.appendChild(liTag);
+                    const moveUp = createButton(buttonType.primary);
+                    const upIcon = createFontIcon(icon.moveUp);
+                    moveUp.appendChild(upIcon);
+                    liTag.replaceChild(moveUp, btn);
+                    const moveDown = createButton(buttonType.primary);
+                    const downIcon = createFontIcon(icon.moveDown);
+                    moveDown.appendChild(downIcon);
+                    liTag.appendChild(spaceNode());
+                    liTag.appendChild(moveDown);
+
+                    break;
+            }
+        }
+    })
     // Challenge: Can you do this with ONE event handler?!
 
     // Only respond to clicks on buttons
@@ -76,6 +112,15 @@ const createButton = (className) => {
     element.type = 'button';
     element.classList.add('outline', className);
     return element;
+}
+
+const spaceNode = () => document.createTextNode(' ');
+
+const getButton = (el) => {
+    let result = null;
+    if(el.tagName === 'BUTTON') result = el;
+    else if(el.parentElement.tagName === 'BUTTON') result = el.parentElement;
+    return result;
 }
 
 // These "utility objects" offer property names for
