@@ -678,6 +678,8 @@ Here are quick links to the quiz readings on Brightspace.
 
 ### Nov 18
 
+- **Today**
+  - Continue [Move/Remove Demo](./src/013/MoveRemove/ReadMe.md).
 
 ### Nov 21
 
