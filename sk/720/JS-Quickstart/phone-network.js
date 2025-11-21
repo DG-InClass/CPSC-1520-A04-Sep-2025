@@ -40,3 +40,4 @@ class Message {
         return `<from ${sender} on ${this.#timestamp}>: ${message}`;
     }
 }
+
