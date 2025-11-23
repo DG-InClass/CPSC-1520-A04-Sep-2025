@@ -687,9 +687,35 @@ Here are quick links to the quiz readings on Brightspace.
 
 ### Nov 24
 
+- **Today**
+  - Intro to Timeouts
+
+    ```ps
+    pnpm dlx tiged --disable-cache --force DG-InClass/CPSC-1520-A04-Sep-2025/sk/720/IntroToTimeouts ./src/014/IntroToTimeouts
+    ```
+
+  - Intro to Intervals
+
+    ```ps
+    pnpm dlx tiged --disable-cache --force DG-InClass/CPSC-1520-A04-Sep-2025/sk/720/IntroToIntervals ./src/014/IntroToIntervals
+    ```
+
+  - A Practical Application: Stopwatch
+
+    ```ps
+    pnpm dlx tiged --disable-cache --force DG-InClass/CPSC-1520-A04-Sep-2025/sk/720/StopWatch2.0 ./src/014/StopWatch2.0
+    ```
+
+  - An Intro to Classes: Rectangles
+
+    ```ps
+    pnpm dlx tiged --disable-cache --force DG-InClass/CPSC-1520-A04-Sep-2025/sk/720/Rectangles ./src/015/Rectangles
+    ```
+
 
 ### Nov 25
 
+- **Today**
 
 ### Nov 28
 
