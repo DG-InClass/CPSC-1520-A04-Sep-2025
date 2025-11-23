@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="module" src="./js/main.js"></script>
+</head>
+<body>
+    <main>
+        <xk-cd></xk-cd>
+    </main>
+
+    <footer>
+
+<my-flag variant="primary"></my-flag>
+
+    <script>
+      class MyFlag extends HTMLElement {
+        static get observedAttributes() {
+          // Must match the attribute you change
+          return ['variant', 'disabled'];
+        }
+
+        constructor() {
+          super();
+          // optional: initial setup
+        }
+
+        connectedCallback() {
+          // Reflect initial state
+          console.log('connected:', this.getAttribute('variant'));
+        }
+
+        attributeChangedCallback(name, oldValue, newValue) {
+          console.log('attribute changed:', { name, oldValue, newValue });
+          if (name === 'disabled') {
+            const isDisabled = newValue !== null;
+            console.log('disabled?', isDisabled);
+          }
+        }
+
+        // Property reflection (optional but recommended)
+        get variant() { return this.getAttribute('variant'); }
+        set variant(v) { this.setAttribute('variant', v); }
+
+        get disabled() { return this.hasAttribute('disabled'); }
+        set disabled(on) {
+          if (on) this.setAttribute('disabled', '');
+          else this.removeAttribute('disabled');
+        }
+      }
+
+      // Define BEFORE using
+      customElements.define('my-flag', MyFlag);
+
+      // Now mutate attributes and watch logs
+      const el = document.querySelector('my-flag');
+
+      // Triggers callback (oldValue: "primary", newValue: "secondary")
+      el.setAttribute('variant', 'secondary');
+
+      // Setting the same value will likely NOT trigger the callback
+      el.setAttribute('variant', 'secondary');
+
+      // Boolean attribute: present triggers with newValue: ""
+      el.setAttribute('disabled', '');
+
+      // Removing triggers with newValue: null
+      el.removeAttribute('disabled');
+
+      // Property reflection also triggers callback
+      el.variant = 'danger';
+      el.disabled = true;
+    </script>
+
+    </footer>
+</body>
+</html>
