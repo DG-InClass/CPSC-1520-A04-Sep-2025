@@ -78,10 +78,10 @@ const Rectangle = class{
 Check out the [shapes demo](./demos/shapes/main.js) for a very simple example of a JavaScript class. Expand on the demo by making the following enhancements.
 
 - Calculate the `area` and `perimiter` of the `Rectangle`.
-- Make additional shape classes for
-  - `Circle`
-  - `Triangle`
 - Create a `<div>` on the page and set its dimensions to the box you create.
   - The `<div>`s are inline-block with margin of 1em to 2em and have a border of 1px rounded
   - Choose a color for the background color of the box
-  - 
+- Make additional shape classes for
+  - `Circle`
+  - `Triangle`
+  - And, if you are interested in really crazy math, consider what might be needed to create a `Star` class.
