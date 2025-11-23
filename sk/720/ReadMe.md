@@ -8,7 +8,7 @@
   - [Toaster] - Pop up an *acheivement notification* when the user clicks on part of the page. The achievement should disappear after a set amount of time (no CSS).
   - [Apocalypse Never] - Will the user keep pressing the button to avert the apocalypse? Is it even possible? What if the user has to pee!? Unless the user keeps pressing the button with x seconds of the last press, the end will come.
   - [Copy-Cat Timer] - Replicate the functionality you see on [*TickCounter*](https://www.tickcounter.com/30minutes). Build this from the ground up!
-- **JavaScript Classes** with [Phone] and [Rectangles](./Rectangles/ReadMe.md)
+- **JavaScript Classes** with [Rectangles](./Rectangles/ReadMe.md) and [Phone](./JS-Quickstart/phone-network.js)
 - ***EXTRA Topics***
   - Custom Events with [Phone Network]
   - Dates and Array Destructuring with [Calendars](./Calendars/ReadMe.md)
