@@ -1,5 +1,13 @@
 // TODO: Add code here
-
+const buttons = document.querySelectorAll('input[type=button]');
+buttons.forEach(btn => {
+    const ms = parseInt(btn.dataset.ms);
+    // Call setTimeout() to wait a certain amount of time, and then disable this button
+    const timerRef = setTimeout(() => {
+        btn.disabled = true;
+    }, ms); // don't forget the second argument - the # of milliseconds
+    btn.dataset.timer = timerRef; // remember the reference to this timeout
+});
 
 const output = document.getElementById('total');
 
@@ -10,7 +18,7 @@ document.querySelector('main > section').addEventListener('click', (evt) => {
         console.log('clicked');
         if(!btn.dataset.clicked) {
             btn.dataset.clicked = true; // Give the prize once
-
+            clearTimeout(btn.dataset.timer);
             btn.classList.add('text-green-700');
             const amount = parseInt(btn.value);
             const total = parseInt(output.innerText) + amount;
