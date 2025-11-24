@@ -53,7 +53,7 @@ You will usually see class members as being *instance based* and *public*. Insta
 Here's an example illustrating public, private based on the prior `Rectangle` class.
 
 ```js
-const Rectangle = class{
+const Rectangle = class {
   #created;
   height;
   width;
@@ -73,11 +73,117 @@ const Rectangle = class{
 }
 ```
 
-## Demo
+## Documenting Our Class
 
-Check out the [shapes demo](./demos/shapes/main.js) for a very simple example of a JavaScript class. Expand on the demo by making the following enhancements.
+By using JSDoc, we can make our class easier to use/consume in other areas of our program.
 
-- Calculate the `area` and `perimiter` of the `Rectangle`.
+Add the following JSDoc above the class declaration.
+
+```js
+/**
+ * Rectangle is a class representing a simple shape.
+ * @param {number} height The height of the rectangle
+ * @param {number} width The width of the rectangle
+ */
+const Rectangle = class {
+    // remaining code is un-touched
+}
+```
+
+This documentation is applied to the constructor as well.
+
+## Giving Each Object Behaviour
+
+Let's add a few things to complete this Rectangle class and make it usable in our page. First of all, we'll throw in a `report()` function on the class so that each object can note its dimensions in the browser's console.
+
+```js
+/**
+ * Outputs the time at which this rectangle was created.
+ */
+report() {
+    console.log(`This box was made on ${this.#created.toLocaleTimeString()}`);
+}
+```
+
+Next, let's add in some properties to calculate the perimeter and the area. Note that these are **calculations**. If we later added the ability to *change* the height or width of the rectangle, the area and perimeter values would give the proper results.
+
+```js
+/**
+ * Calculates the area of the rectangle
+ */
+get area() {
+    return this.width * this.height;
+}
+
+/**
+ * Calculates the permiter of the rectangle
+ */
+get perimeter() {
+    return (this.width + this.height) * 2;
+}
+```
+
+## Complete Rectangle
+
+```js
+/**
+ * Rectangle is a class representing a simple shape.
+ * @param {number} height The height of the rectangle
+ * @param {number} width The width of the rectangle
+ */
+const Rectangle = class {
+    // Properties of the instance of Rectangle
+    #created;   // Private property - #
+    height;     // Public property
+    width;      // Public property
+
+    // You can only have one constructor()
+    constructor(height, width) {
+        // The job of the constructor is to make sure
+        // all the properties have "meaningful" values
+        this.height = height;
+        this.width = width;
+        this.#created = new Date();
+        Rectangle.#count++; // Keeping track of how many rectangles I've created
+    }
+
+    // We can use the static keyword for properties
+    // and functions that we want to be "shared"
+    // among all instances
+    static #count = 0;  // Static private property
+
+    // Static public getter
+    static get count() {
+        return Rectangle.#count;
+    }
+
+    /**
+     * Outputs the time at which this rectangle was created.
+     */
+    report() {
+        console.log(`This box was made on ${this.#created.toLocaleTimeString()}`);
+    }
+
+    /**
+     * Calculates the area of the rectangle
+     */
+    get area() {
+        return this.width * this.height;
+    }
+
+    /**
+     * Calculates the permiter of the rectangle
+     */
+    get perimeter() {
+        return (this.width + this.height) * 2;
+    }
+}
+```
+
+## Practice
+
+Expand on the demo by making the following enhancements.
+
 - Create a `<div>` on the page and set its dimensions to the box you create.
   - The `<div>`s are inline-block with margin of 1em to 2em and have a border of 1px rounded
   - Choose a color for the background color of the box
