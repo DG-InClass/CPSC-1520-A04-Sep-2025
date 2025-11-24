@@ -20,20 +20,20 @@ document.getElementById('main-button').addEventListener('click', function() {
 
   if (mainButton.textContent === 'Start') {
     const startTime = Date.now() - elapsedTime;
-    stopwatchInterval = setInterval(function() {
-      elapsedTime = Date.now() - startTime;
-      stopwatch.textContent = formatTime(elapsedTime);
-    }, 10);
+    // A) Start the interval
+
     mainButton.textContent = 'Stop';
   } else {
-    clearInterval(stopwatchInterval);
+    // B) Stop the interval
+
     mainButton.textContent = 'Start';
   }
 });
 
 document.getElementById('clear-button').addEventListener('click', function() {
-  clearInterval(stopwatchInterval);
+  // C) Stop the interval before clearing the display
+
   document.getElementById('main-button').textContent = 'Start';
   document.querySelector('.stopwatch').textContent = '00:00:00:000';
   elapsedTime = 0;
-})
+});

@@ -1,5 +1,9 @@
 # Intro to Timeouts
 
+The anatomy of a timeout in JavaScript is pretty simple. The [`setTimeout()`](https://developer.mozilla.org/en-US/docs/Web/API/Window/setTimeout) function has two parameters. The first is the *callback function* to run when the timeout expires. The second is the *number of milliseconds* that the timout should wait until invoking the callback. `setTimeout()` is asynchronous, so it is non-blocking.
+
+## Using this Demo
+
 Let's add some timeouts for all the buttons. We'll be using the number of milliseconds noted on each button's `data-ms` attribute.
 
 ```js
