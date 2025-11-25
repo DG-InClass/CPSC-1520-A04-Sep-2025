@@ -13,7 +13,7 @@ document
         let calendarContainer = document.getElementById('calendar');
         calendarContainer.innerHTML = ''; // clear
         
-        let selectedMonth = evt.target.value;
+        let selectedMonth = evt.target.value; // Format is yyyy-MM
         // destructuring an array of values
         let [year, month] = selectedMonth.split('-')
         //                  \__ string__/\_string[]_/
@@ -24,10 +24,12 @@ document
         let startOfMonth = new Date(year, month - 1);
         let endOfMonth = new Date(year, month, 0);
         let daysDiff = endOfMonth.getDate() + startOfMonth.getDay();
+        // maxDays will be a multiple of 7, for a full week calendar
         let maxDays = daysDiff == 28 ? 28 : daysDiff <= 35 ? 35 : 42;
         
-        // Reset the date to the first day of the week
-        // (Sunday)
+        // Reset the date to the first day of the week (Sunday),
+        // so that we can begin noting the actual dates beginning
+        // with Sunday.
         startOfMonth.setDate(startOfMonth.getDate() - startOfMonth.getDay());
 
         for(let count = 0; count < maxDays; count++) {
