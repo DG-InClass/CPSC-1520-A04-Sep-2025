@@ -1,0 +1,15 @@
+[popover] {
+    inset: unset;
+    bottom: anchor(top);
+    left: anchor(center);
+    /* translate: -50%; */
+    margin: 0.25rem 0;
+}
+
+.label-container > label {
+    display: inline-block;
+}
+.information {
+    display: inline-block;
+    padding: 0 5px;
+}

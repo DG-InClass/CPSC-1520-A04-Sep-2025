@@ -11,6 +11,7 @@
 - **JavaScript Classes** with [Rectangles](./Rectangles/ReadMe.md) and [Phone](./JS-Quickstart/phone-network.js)
 - ***EXTRA Topics***
   - ✅ [Fetching Markdown](./Fetching-Markdown/)
+  - ✅ [Popover](./Popover/ReadMe.md)
   - Custom Events with [Phone Network]
   - Dates and Array Destructuring with [Calendars](./Calendars/ReadMe.md)
   - [Icon Matching Game](../101/ReadMe.md)
