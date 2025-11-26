@@ -1,0 +1,14 @@
+Global box sizing reset
+* {
+    box-sizing: border-box;
+}
+
+#output {
+    font-size: 1.25em;
+    height: 40vh;
+}
+
+input::placeholder {
+    color: #888888;
+    font-style: italic;
+}
