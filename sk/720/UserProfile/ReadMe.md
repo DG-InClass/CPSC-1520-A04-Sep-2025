@@ -12,6 +12,12 @@
     >
     ```
 
+    Another example of an XSS from user input is the following:
+
+    ```html
+    <img src=x onerror="alert('boom')">
+    ```
+
 > Read a [Practical Guide to Securing `.innerHTML` in JavaScript Applications](https://www.penligent.ai/hackinglabs/practical-guide-to-securing-innerhtml-in-javascript-applications/).
 > Although it recommends `.textContent`, it's even better to use things like **`document.createElement()`** and **`document.createTextNode()`**. ✨
 
