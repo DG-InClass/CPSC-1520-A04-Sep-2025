@@ -727,6 +727,8 @@ Here are quick links to the quiz readings on Brightspace.
 
 ### Dec 01
 
+- **Today**
+  - Debugging - [Move/Remove](./src/013/MoveRemove/)
 
 ### Dec 02
 
