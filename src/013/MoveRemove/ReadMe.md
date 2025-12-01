@@ -17,7 +17,31 @@ When debugging VS Code, it's best if the web project (the one with the `package.
 1. Open the terminal in the folder of your web project.
 2. Run `code -r .` in the terminal. The `-r` flag means to "re-launch" VS Code, and the `.` is the current directory (the folder of the web project we're in).
 
+#### How to Debug
 
+We'll use the built-in JavaScript debugger for VS Code. There are several ways to get this started. The cleanest one I've found is to do the following.
+
+1. First, launch the web server (`pnpm dev`).
+1. Open the command palette (`F1` or `ctrl`+`shift`+`p`) and type `Debug: Open Link`.
+1. For the url of our *Vite* development server, it defaults to using `http://localhost:5173` (or at the next available port).
+1. VS Code should pop up a notification asking if you want to save the launch settings. Click "Yes". That will create a file called `.vscode/launch.json` in your web project folder.
+
+    ![pop-up](./img/vscode-notification.png)
+
+1. Alternatively, you can manually create the `.vscode/launch.json` file yourself. Change to `"type": "chrome",` if you like Google's Chrome browser, or use `"type": "edge",` if you like Microsoft's Edge browser.
+
+    ```json
+    {
+        "configurations": [
+            {
+                "type": "msedge",
+                "name": "http://localhost:5173",
+                "request": "launch",
+                "url": "http://localhost:5173"
+            }
+        ]
+    }
+    ```
 
 ----
 
