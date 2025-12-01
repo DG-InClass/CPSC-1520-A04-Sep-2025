@@ -1,9 +1,23 @@
 # Moving/Removing Elements with the DOM API
 
-- [ ] Removing items using the `.remove()`
-- [ ] Adding new items to unsorted using the `.appendChild()`
-- [ ] Moving an item from unsorted to sorted using the `.appendChild()`
-- [ ] Moving an item up or down in the list with `.insertBefore()`.
+- [x] Removing items using the `.remove()`
+- [x] Adding new items to unsorted using the `.appendChild()`
+- [x] Moving an item from unsorted to sorted using the `.appendChild()`
+- [x] Moving an item up or down in the list with `.insertBefore()`.
+- [ ] ***Debugging** in VS Code*
+
+----
+
+## Debugging in VS Code
+
+The "poor man's debugger" in the JavaScript world is to just do a bunch of `console.log()` statements in your code to see what's happening. That can work - up to a point. It won't take too long until you discover that usig the **debugging tools** is *far superior*.
+
+When debugging VS Code, it's best if the web project (the one with the `package.json`) is at the *root* of the editor's active workspace. Since this Student Workbook has several *separate* web projects, we need to re-launch VS Code inside of the project we want to debug (like this one).
+
+1. Open the terminal in the folder of your web project.
+2. Run `code -r .` in the terminal. The `-r` flag means to "re-launch" VS Code, and the `.` is the current directory (the folder of the web project we're in).
+
+
 
 ----
 
