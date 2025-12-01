@@ -730,13 +730,14 @@ Here are quick links to the quiz readings on Brightspace.
 ### Dec 01
 
 - **Today**
-  - 🎉 Important notes on Assignment 3
-    - "Broken" file name - how to fix without breaking tests...
-    - UI Test Viewer
   - Debugging - [Move/Remove](./src/013/MoveRemove/)
 
 ### Dec 02
 
+- **Today**
+  - 🎉 Important notes on Assignment 3
+    - "Broken" file name - how to fix without breaking tests...
+    - UI Test Viewer
 
 ### Dec 05
 
