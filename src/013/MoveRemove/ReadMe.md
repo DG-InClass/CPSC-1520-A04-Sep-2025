@@ -19,6 +19,8 @@ When debugging VS Code, it's best if the web project (the one with the `package.
 
 #### How to Debug
 
+##### One-Time Setup
+
 We'll use the built-in JavaScript debugger for VS Code. There are several ways to get this started. The cleanest one I've found is to do the following.
 
 1. First, launch the web server (`pnpm dev`).
@@ -42,6 +44,21 @@ We'll use the built-in JavaScript debugger for VS Code. There are several ways t
         ]
     }
     ```
+
+##### Debugging Tools
+
+It's good to take some time and get familiar with the [debugger user interface](https://code.visualstudio.com/docs/debugtest/debugging#_debugger-user-interface) in VS Code.
+
+With the debugger, we can set breakpoints, step through code, and examine variables to see what's happening as our code executes. We'll start by adding a breakpoint at line 4 of our `main.js`.
+
+![](./img/debug-set-breakpoint.jpg)
+
+There are several function keys that become useful for debugging:
+
+- `F5` - Start a debugging session (if one isn't already launched) or Continue executing to the next breakpoint.
+- `F10` - Step over (**execute**) the line of code you are currently paused on.
+- `F11` - Step into a function call from the line you are paused on.
+- `Shift` + `F11` - Step out of the function call you are paused in.
 
 ----
 
