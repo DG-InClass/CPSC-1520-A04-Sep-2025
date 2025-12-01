@@ -53,7 +53,9 @@ With the debugger, we can set breakpoints, step through code, and examine variab
 
 ![](./img/debug-set-breakpoint.jpg)
 
-There are several function keys that become useful for debugging:
+There are several function keys that become useful for debugging. These are keyboard shortcuts to the visual toolbar that appears when the debugger is launched.
+
+![](./img/debug-toolbar.png)
 
 - `F5` - Start a debugging session (if one isn't already launched) or Continue executing to the next breakpoint.
 - `F10` - Step over (**execute**) the line of code you are currently paused on.
