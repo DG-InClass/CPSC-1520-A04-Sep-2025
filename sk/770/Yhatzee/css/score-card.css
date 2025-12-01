@@ -1,0 +1,116 @@
+@import "tailwindcss";
+
+/* ------------------------------
+   Yahtzee Scorecard Component
+   Tailwind v4 + Modern CSS Nesting
+   ------------------------------ */
+
+#yahtzee-scorecard {
+  @apply max-w-5xl mx-auto my-6 bg-white border border-slate-500 rounded-sm shadow-sm;
+
+  > header {
+    @apply px-3 py-2 border-b border-slate-500 flex items-end justify-between;
+
+    h1 {
+      @apply text-sm font-bold tracking-tight uppercase;
+    }
+
+    p {
+      @apply text-[0.65rem] text-slate-600 uppercase tracking-wide;
+    }
+  }
+
+  > div {
+    @apply px-3 py-2;
+
+    table {
+      @apply w-full border-collapse text-[0.65rem];
+
+      thead {
+        th {
+          @apply border-b border-slate-500 py-1;
+
+          &:first-child,
+          &:nth-child(2) {
+            @apply text-left;
+          }
+
+          &:nth-child(n + 3) {
+            @apply text-center font-semibold tracking-wide;
+          }
+        }
+      }
+
+      tbody {
+        tr {
+          th,
+          td {
+            @apply border-b border-slate-300 align-top;
+          }
+
+          &:last-child {
+            th,
+            td {
+              @apply border-b border-slate-500;
+            }
+          }
+
+          &[data-section-heading="true"] {
+            th,
+            td {
+              @apply border-b border-slate-500 bg-slate-50;
+            }
+
+            th:first-child {
+              @apply uppercase tracking-wide text-[0.65rem];
+            }
+          }
+
+          &[data-total-row="true"] {
+            output[data-player][data-category] {
+              @apply border-b border-slate-700;
+            }
+          }
+
+          &[data-grand-total="true"] {
+            @apply bg-slate-100;
+
+            th {
+              @apply font-bold uppercase text-[0.7rem] py-2;
+            }
+
+            td[data-description="true"] {
+              @apply text-slate-600 text-[0.65rem] py-2;
+            }
+
+            td[data-player-cell="true"] {
+              output {
+                @apply text-[0.8rem] font-bold;
+              }
+            }
+          }
+        }
+
+        th[scope="row"] {
+          @apply px-1 py-1 font-semibold text-left cursor-pointer;
+        }
+
+        td[data-description="true"] {
+          @apply px-1 py-1 text-slate-600;
+        }
+
+        td[data-player-cell="true"] {
+          @apply px-1 py-1 text-center;
+
+          output[data-player][data-category] {
+            @apply inline-block font-semibold text-right text-[0.75rem]
+              border-b border-dotted border-slate-500;
+
+            /* fixed width for 3-digit numbers */
+            width: 2.25rem;
+          }
+        }
+      }
+    }
+  }
+}

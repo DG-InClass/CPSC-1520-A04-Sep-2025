@@ -1,0 +1,12 @@
+body > header {
+	text-align: center;
+	background: #333;
+	padding: 1em;
+}
+.App {
+	font-family: sans-serif;
+	text-align: center;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}

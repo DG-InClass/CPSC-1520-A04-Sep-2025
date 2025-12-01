@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yacht-Zee</title>
+    <script type="module" src="./js/main.js"></script>
+</head>
+<body>
+    <header>
+        <div class="App"></div>
+        <hr />
+    </header>
+    <main class="bg-slate-100">
+        <section id="yahtzee-scorecard" aria-label="Yahtzee score card">
+  <header>
+    <div>
+      <h1>Yahtzee</h1>
+      <p>Score Card</p>
+    </div>
+    <div>
+        <h1 id="current-player">P1 &RightArrow; Player Won</h1>
+    </div>
+  </header>
+
+  <div>
+    <table>
+      <thead>
+        <tr>
+          <th scope="col">Category</th>
+          <th scope="col">Description</th>
+          <th scope="col">P1</th>
+          <th scope="col">P2</th>
+          <th scope="col">P3</th>
+          <th scope="col">P4</th>
+          <th scope="col">P5</th>
+          <th scope="col">P6</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Upper Section heading -->
+        <tr data-section-heading="true">
+          <th scope="row">Upper Section</th>
+          <td data-description="true">Aces through Sixes</td>
+          <td data-player-cell="true"></td>
+          <td data-player-cell="true"></td>
+          <td data-player-cell="true"></td>
+          <td data-player-cell="true"></td>
+          <td data-player-cell="true"></td>
+          <td data-player-cell="true"></td>
+        </tr>
+
+        <!-- Upper categories -->
+        <tr>
+          <th scope="row">Aces (Ones)</th>
+          <td data-description="true">Total of all 1s</td>
+          <td data-player-cell="true"><output data-player="1" data-category="aces"></output></td>
+          <td data-player-cell="true"><output data-player="2" data-category="aces"></output></td>
+          <td data-player-cell="true"><output data-player="3" data-category="aces"></output></td>
+          <td data-player-cell="true"><output data-player="4" data-category="aces"></output></td>
+          <td data-player-cell="true"><output data-player="5" data-category="aces"></output></td>
+          <td data-player-cell="true"><output data-player="6" data-category="aces"></output></td>
+        </tr>
+
+        <tr>
+          <th scope="row">Twos</th>
+          <td data-description="true">Total of all 2s</td>
+          <td data-player-cell="true"><output data-player="1" data-category="twos"></output></td>
+          <td data-player-cell="true"><output data-player="2" data-category="twos"></output></td>
+          <td data-player-cell="true"><output data-player="3" data-category="twos"></output></td>
+          <td data-player-cell="true"><output data-player="4" data-category="twos"></output></td>
+          <td data-player-cell="true"><output data-player="5" data-category="twos"></output></td>
+          <td data-player-cell="true"><output data-player="6" data-category="twos"></output></td>
+        </tr>
+
+        <tr>
+          <th scope="row">Threes</th>
+          <td data-description="true">Total of all 3s</td>
+          <td data-player-cell="true"><output data-player="1" data-category="threes"></output></td>
+          <td data-player-cell="true"><output data-player="2" data-category="threes"></output></td>
+          <td data-player-cell="true"><output data-player="3" data-category="threes"></output></td>
+          <td data-player-cell="true"><output data-player="4" data-category="threes"></output></td>
+          <td data-player-cell="true"><output data-player="5" data-category="threes"></output></td>
+          <td data-player-cell="true"><output data-player="6" data-category="threes"></output></td>
+        </tr>
+
+        <tr>
+          <th scope="row">Fours</th>
+          <td data-description="true">Total of all 4s</td>
+          <td data-player-cell="true"><output data-player="1" data-category="fours"></output></td>
+          <td data-player-cell="true"><output data-player="2" data-category="fours"></output></td>
+          <td data-player-cell="true"><output data-player="3" data-category="fours"></output></td>
+          <td data-player-cell="true"><output data-player="4" data-category="fours"></output></td>
+          <td data-player-cell="true"><output data-player="5" data-category="fours"></output></td>
+          <td data-player-cell="true"><output data-player="6" data-category="fours"></output></td>
+        </tr>
+
+        <tr>
+          <th scope="row">Fives</th>
+          <td data-description="true">Total of all 5s</td>
+          <td data-player-cell="true"><output data-player="1" data-category="fives"></output></td>
+          <td data-player-cell="true"><output data-player="2" data-category="fives"></output></td>
+          <td data-player-cell="true"><output data-player="3" data-category="fives"></output></td>
+          <td data-player-cell="true"><output data-player="4" data-category="fives"></output></td>
+          <td data-player-cell="true"><output data-player="5" data-category="fives"></output></td>
+          <td data-player-cell="true"><output data-player="6" data-category="fives"></output></td>
+        </tr>
+
+        <tr>
+          <th scope="row">Sixes</th>
+          <td data-description="true">Total of all 6s</td>
+          <td data-player-cell="true"><output data-player="1" data-category="sixes"></output></td>
+          <td data-player-cell="true"><output data-player="2" data-category="sixes"></output></td>
+          <td data-player-cell="true"><output data-player="3" data-category="sixes"></output></td>
+          <td data-player-cell="true"><output data-player="4" data-category="sixes"></output></td>
+          <td data-player-cell="true"><output data-player="5" data-category="sixes"></output></td>
+          <td data-player-cell="true"><output data-player="6" data-category="sixes"></output></td>
+        </tr>
+
+        <!-- Upper subtotals -->
+        <tr data-total-row="true">
+          <th scope="row">Upper Subtotal</th>
+          <td data-description="true">Aces through Sixes</td>
+          <td data-player-cell="true"><output data-player="1" data-category="upper-subtotal"></output></td>
+          <td data-player-cell="true"><output data-player="2" data-category="upper-subtotal"></output></td>
+          <td data-player-cell="true"><output data-player="3" data-category="upper-subtotal"></output></td>
+          <td data-player-cell="true"><output data-player="4" data-category="upper-subtotal"></output></td>
+          <td data-player-cell="true"><output data-player="5" data-category="upper-subtotal"></output></td>
+          <td data-player-cell="true"><output data-player="6" data-category="upper-subtotal"></output></td>
+        </tr>
+
+        <tr data-total-row="true">
+          <th scope="row">Upper Bonus</th>
+          <td data-description="true">+35 if subtotal ≥ 63</td>
+          <td data-player-cell="true"><output data-player="1" data-category="upper-bonus"></output></td>
+          <td data-player-cell="true"><output data-player="2" data-category="upper-bonus"></output></td>
+          <td data-player-cell="true"><output data-player="3" data-category="upper-bonus"></output></td>
+          <td data-player-cell="true"><output data-player="4" data-category="upper-bonus"></output></td>
+          <td data-player-cell="true"><output data-player="5" data-category="upper-bonus"></output></td>
+          <td data-player-cell="true"><output data-player="6" data-category="upper-bonus"></output></td>
+        </tr>
+
+        <tr data-total-row="true">
+          <th scope="row">Upper Total</th>
+          <td data-description="true">Subtotal + Bonus</td>
+          <td data-player-cell="true"><output data-player="1" data-category="upper-total"></output></td>
+          <td data-player-cell="true"><output data-player="2" data-category="upper-total"></output></td>
+          <td data-player-cell="true"><output data-player="3" data-category="upper-total"></output></td>
+          <td data-player-cell="true"><output data-player="4" data-category="upper-total"></output></td>
+          <td data-player-cell="true"><output data-player="5" data-category="upper-total"></output></td>
+          <td data-player-cell="true"><output data-player="6" data-category="upper-total"></output></td>
+        </tr>
+
+        <!-- Lower Section heading -->
+        <tr data-section-heading="true">
+          <th scope="row">Lower Section</th>
+          <td data-description="true">Combinations and bonuses</td>
+          <td data-player-cell="true"></td>
+          <td data-player-cell="true"></td>
+          <td data-player-cell="true"></td>
+          <td data-player-cell="true"></td>
+          <td data-player-cell="true"></td>
+          <td data-player-cell="true"></td>
+        </tr>
+
+        <!-- Lower categories -->
+        <tr>
+          <th scope="row">Three of a Kind</th>
+          <td data-description="true">At least 3 of a kind; total of all dice</td>
+          <td data-player-cell="true"><output data-player="1" data-category="three-kind"></output></td>
+          <td data-player-cell="true"><output data-player="2" data-category="three-kind"></output></td>
+          <td data-player-cell="true"><output data-player="3" data-category="three-kind"></output></td>
+          <td data-player-cell="true"><output data-player="4" data-category="three-kind"></output></td>
+          <td data-player-cell="true"><output data-player="5" data-category="three-kind"></output></td>
+          <td data-player-cell="true"><output data-player="6" data-category="three-kind"></output></td>
+        </tr>
+
+        <tr>
+          <th scope="row">Four of a Kind</th>
+          <td data-description="true">At least 4 of a kind; total of all dice</td>
+          <td data-player-cell="true"><output data-player="1" data-category="four-kind"></output></td>
+          <td data-player-cell="true"><output data-player="2" data-category="four-kind"></output></td>
+          <td data-player-cell="true"><output data-player="3" data-category="four-kind"></output></td>
+          <td data-player-cell="true"><output data-player="4" data-category="four-kind"></output></td>
+          <td data-player-cell="true"><output data-player="5" data-category="four-kind"></output></td>
+          <td data-player-cell="true"><output data-player="6" data-category="four-kind"></output></td>
+        </tr>
+
+        <tr>
+          <th scope="row">Full House</th>
+          <td data-description="true">3 of one, 2 of another; score 25</td>
+          <td data-player-cell="true"><output data-player="1" data-category="full-house"></output></td>
+          <td data-player-cell="true"><output data-player="2" data-category="full-house"></output></td>
+          <td data-player-cell="true"><output data-player="3" data-category="full-house"></output></td>
+          <td data-player-cell="true"><output data-player="4" data-category="full-house"></output></td>
+          <td data-player-cell="true"><output data-player="5" data-category="full-house"></output></td>
+          <td data-player-cell="true"><output data-player="6" data-category="full-house"></output></td>
+        </tr>
+
+        <tr>
+          <th scope="row">Small Straight</th>
+          <td data-description="true">Sequence of 4; score 30</td>
+          <td data-player-cell="true"><output data-player="1" data-category="small-straight"></output></td>
+          <td data-player-cell="true"><output data-player="2" data-category="small-straight"></output></td>
+          <td data-player-cell="true"><output data-player="3" data-category="small-straight"></output></td>
+          <td data-player-cell="true"><output data-player="4" data-category="small-straight"></output></td>
+          <td data-player-cell="true"><output data-player="5" data-category="small-straight"></output></td>
+          <td data-player-cell="true"><output data-player="6" data-category="small-straight"></output></td>
+        </tr>
+
+        <tr>
+          <th scope="row">Large Straight</th>
+          <td data-description="true">Sequence of 5; score 40</td>
+          <td data-player-cell="true"><output data-player="1" data-category="large-straight"></output></td>
+          <td data-player-cell="true"><output data-player="2" data-category="large-straight"></output></td>
+          <td data-player-cell="true"><output data-player="3" data-category="large-straight"></output></td>
+          <td data-player-cell="true"><output data-player="4" data-category="large-straight"></output></td>
+          <td data-player-cell="true"><output data-player="5" data-category="large-straight"></output></td>
+          <td data-player-cell="true"><output data-player="6" data-category="large-straight"></output></td>
+        </tr>
+
+        <tr>
+          <th scope="row">Yahtzee</th>
+          <td data-description="true">5 of a kind; score 50</td>
+          <td data-player-cell="true"><output data-player="1" data-category="yahtzee"></output></td>
+          <td data-player-cell="true"><output data-player="2" data-category="yahtzee"></output></td>
+          <td data-player-cell="true"><output data-player="3" data-category="yahtzee"></output></td>
+          <td data-player-cell="true"><output data-player="4" data-category="yahtzee"></output></td>
+          <td data-player-cell="true"><output data-player="5" data-category="yahtzee"></output></td>
+          <td data-player-cell="true"><output data-player="6" data-category="yahtzee"></output></td>
+        </tr>
+
+        <tr>
+          <th scope="row">Chance</th>
+          <td data-description="true">Any combo; total of all dice</td>
+          <td data-player-cell="true"><output data-player="1" data-category="chance"></output></td>
+          <td data-player-cell="true"><output data-player="2" data-category="chance"></output></td>
+          <td data-player-cell="true"><output data-player="3" data-category="chance"></output></td>
+          <td data-player-cell="true"><output data-player="4" data-category="chance"></output></td>
+          <td data-player-cell="true"><output data-player="5" data-category="chance"></output></td>
+          <td data-player-cell="true"><output data-player="6" data-category="chance"></output></td>
+        </tr>
+
+        <tr>
+          <th scope="row">Yahtzee Bonus</th>
+          <td data-description="true">Extra Yahtzees (e.g. +100 each)</td>
+          <td data-player-cell="true"><output data-player="1" data-category="yahtzee-bonus"></output></td>
+          <td data-player-cell="true"><output data-player="2" data-category="yahtzee-bonus"></output></td>
+          <td data-player-cell="true"><output data-player="3" data-category="yahtzee-bonus"></output></td>
+          <td data-player-cell="true"><output data-player="4" data-category="yahtzee-bonus"></output></td>
+          <td data-player-cell="true"><output data-player="5" data-category="yahtzee-bonus"></output></td>
+          <td data-player-cell="true"><output data-player="6" data-category="yahtzee-bonus"></output></td>
+        </tr>
+
+        <!-- Lower total -->
+        <tr data-total-row="true">
+          <th scope="row">Lower Total</th>
+          <td data-description="true">Sum of all lower section scores</td>
+          <td data-player-cell="true"><output data-player="1" data-category="lower-total"></output></td>
+          <td data-player-cell="true"><output data-player="2" data-category="lower-total"></output></td>
+          <td data-player-cell="true"><output data-player="3" data-category="lower-total"></output></td>
+          <td data-player-cell="true"><output data-player="4" data-category="lower-total"></output></td>
+          <td data-player-cell="true"><output data-player="5" data-category="lower-total"></output></td>
+          <td data-player-cell="true"><output data-player="6" data-category="lower-total"></output></td>
+        </tr>
+
+        <!-- Grand total -->
+        <tr data-grand-total="true">
+          <th scope="row">Grand Total</th>
+          <td data-description="true">Upper Total + Lower Total</td>
+          <td data-player-cell="true"><output data-player="1" data-category="grand-total"></output></td>
+          <td data-player-cell="true"><output data-player="2" data-category="grand-total"></output></td>
+          <td data-player-cell="true"><output data-player="3" data-category="grand-total"></output></td>
+          <td data-player-cell="true"><output data-player="4" data-category="grand-total"></output></td>
+          <td data-player-cell="true"><output data-player="5" data-category="grand-total"></output></td>
+          <td data-player-cell="true"><output data-player="6" data-category="grand-total"></output></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
+
