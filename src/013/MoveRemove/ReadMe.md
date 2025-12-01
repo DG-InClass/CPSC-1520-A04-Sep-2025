@@ -10,7 +10,7 @@
 
 ## Debugging in VS Code
 
-The "poor man's debugger" in the JavaScript world is to just do a bunch of `console.log()` statements in your code to see what's happening. That can work - up to a point. It won't take too long until you discover that usig the **debugging tools** is *far superior*.
+The "poor man's debugger" in the JavaScript world is to just do a bunch of `console.log()` statements in your code to see what's happening. That can work - up to a point. It won't take too long until you discover that using the **debugging tools** is *far superior*.
 
 When debugging VS Code, it's best if the web project (the one with the `package.json`) is at the *root* of the editor's active workspace. Since this Student Workbook has several *separate* web projects, we need to re-launch VS Code inside of the project we want to debug (like this one).
 
