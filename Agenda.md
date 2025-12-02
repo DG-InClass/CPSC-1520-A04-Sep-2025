@@ -738,6 +738,12 @@ Here are quick links to the quiz readings on Brightspace.
   - 🎉 Important notes on Assignment 3
     - "Broken" file name - how to fix without breaking tests...
     - UI Test Viewer
+    - Practicing the DOM API with [BINGO](./src/016/Bingo/ReadMe.md)
+    - A quick look at *Debugging in the **browser dev tools***
+
+      ```ps
+      pnpm dlx tiged --disable-cache --force DG-InClass/CPSC-1520-A04-Sep-2025/sk/770/Bingo ./src/016/Bingo
+      ```
 
 ### Dec 05
 
